@@ -149,7 +149,7 @@ for (let i = 0; i < 6; i++) {
 }
 
 // Load words
-fetch("words.json")
+fetch("./words.json")
   .then(res => res.json())
   .then(data => {
       validWords = data.map(w => w.toUpperCase());
@@ -222,3 +222,4 @@ function checkWord() {
 
 </body>
 </html>
+
